@@ -1,5 +1,5 @@
 <?php 
-/**
+/** 
  * The main template file
  *
  * This is the most generic template file in a WordPress theme
@@ -16,8 +16,8 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-	<main><?php if ( have_posts() ) : ?>
+<!-- <div id="primary" class="content-area">
+	<main><?php if ( have_posts() ) : ?> -->
 
 
 
@@ -32,16 +32,16 @@ get_header(); ?>
 			while ( have_posts() ) : 
 				the_post(); ?>
 				
-				<h1><?php the_title(); ?></h1> <!-- comentariu html -->
+				<h1><?php the_title(); ?></h1> <!-- comentariu html -- se vede in source page -->
 				<?php the_content();?>
 				<?php the_date(); ?>
 				<?php the_category();?>
 				<?php
-					echo '<hr>'; //comentariu php - diferenta dintr comm de html si php este ca pe cel de html se vede ce comentariu ai pus in source page (not ok)
+					echo '<hr>'; //comentariu php 
 
 												
-				// End the loop.
-				endwhile;
+			// End the loop.
+			endwhile;
 
 
 

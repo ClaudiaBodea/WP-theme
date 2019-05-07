@@ -30,7 +30,7 @@
               <li><a href="about.html">ABOUT</a></li>
               <li><a href="archive.html">ARCHIVE</a></li>
               <li><a href="contact.html">CONTACT</a></li>
-              <li><a href="search.html"><img src="search_icon.jpg" alt = "⌕"></a></li>
+              <li><a href="search.html">⌕</a></li>
             </ul>
             <nav>
         </div>
