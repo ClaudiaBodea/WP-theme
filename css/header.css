@@ -4,41 +4,61 @@ html {
   font-family: Lato;
 }
 
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
-  max-width: 1440px;
-  width: 95%;
+	display: flex;
   margin: 0 auto;
-  position: relative;
+  padding:0;
+  max-width: 1400px;
+  width: 95%;
 }
 
 .header {
-  width: 950px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 80px 225px;
-  background-color: #ffffff;
 }
 
 #title h1 {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold 700 italic;
-  font-style: italic;
-  font-size: 30px;
-  text-align: center;
-  color: #000000;
-  margin: 0;
+	display: inline-block;	
+	width: 733px;	
+	height:192px;
+	border-top: 4px solid #5C6BC0;
+	padding-top:76px;
+	padding-bottom: 76px;
+	padding-left: 225px;
+	align-items: left;
+  	font-family: 'Lato', sans-serif;
+  	font-weight: bold 700 italic;
+  	font-style: italic;
+  	font-size: 32px;  
+  	color: #000;
+  	margin: 0;
+  }
+
+
+ nav ul { 	
+ 	display: inline-block;	
+ 	width:667px;
+ 	height:192px;
+	padding:87px 161px;	
+	align-items: right;
+	margin:0px; 
 }
 
-.header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.header nav ul li {
-  display: inline;
-  padding-left: 30px;
+ nav ul li {
+ 	display: inline;
+ 	padding: 12px;	
 }
 
 /**nav ul li::after {
@@ -47,33 +67,33 @@ html {
   display: inline-block;
 }*/
 
-.header nav ul li a {
+nav ul li a {
+	
   font-family: 'Lato', sans-serif;
   font-weight: bold 700;
   font-style: bold;  
-  font-size: 12px; 
-  display: inline-block;
+  font-size: 12px;   
   text-align: center;
   color: #7d7d7d;
   text-decoration: none;
+  padding-bottom: 9px;
 }
 
-.header nav ul li a:active {
+ nav ul li a:active {
   color: #7d7d7d;
 }
 
-.header nav ul li a:link {
+ nav ul li a:link {
    color: #000000;
   }
 
-.header nav ul li a:visited {
+ nav ul li a:visited {
   color: #000000;
 }
 
-.header nav ul li a:hover {
+nav ul li a:hover {
   color: #000000;
-  border-bottom: 4px solid #5C6BC0;
- 
+  border-bottom: 4px solid #5C6BC0; 
 }
 
 </style>

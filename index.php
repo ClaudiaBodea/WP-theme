@@ -1,65 +1,41 @@
-<?php 
-/** 
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage clautheme
- * @since clautheme 1.0
- */
-
-get_header(); ?>
-
-<!-- <div id="primary" class="content-area">
-	<main><?php if ( have_posts() ) : ?> -->
-
-
-
-
-
-
-
-
-
-			<?php
-			// Start the loop.
+<?php get_header(); 
+	if ( have_posts() ) :
 			while ( have_posts() ) : 
 				the_post(); ?>
-				
-				<h1><?php the_title(); ?></h1> <!-- comentariu html -- se vede in source page -->
-				<?php the_content();?>
-				<?php the_date(); ?>
-				<?php the_category();?>
-				<?php
-					echo '<hr>'; //comentariu php 
+				<div class="image">
+					<?php the_post_thumbnail(); ?>
+				</div>
 
-												
-			// End the loop.
+			<div class="pagina">
+				<div class="category">
+					<?php the_category(); ?>
+				</div>
+				
+				<div class="date">
+					<?php the_date(); ?>
+				</div>
+				
+				<div class="image">
+					<?php the_post_thumbnail(); ?>
+				</div>
+				
+				<div class="title-post">
+					<?php the_title(); ?>
+				</div>
+
+				<div class="post">
+					<?php the_content(); ?>
+				</div>
+
+			</div>
+				
+	<?php
+		
 			endwhile;
-
-
-
-
-
-
-
-
-			
-			// If no content, include the "No posts found" template.
 		else :
-				
-
+			echo 'nu avem posturi';
 		endif;
-		?>
+		
+	?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
