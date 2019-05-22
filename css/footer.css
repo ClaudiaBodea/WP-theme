@@ -22,7 +22,7 @@
    background-color: #5c6bc0;
 }
 
-#name p {
+.name {
   font-family: 'Lato', sans-serif;
   font-weight: bold 700 italic;
   font-style: italic;

@@ -1,15 +1,16 @@
 <footer class="continut">
   	  <div class="footer">
-      	<div id="name">
-       	 	<p>Palo Alto</p>
+      	<div class="name">
+       	 	<?php echo get_bloginfo( 'name' ); ?>
      	</div>
-     	<ul>
-       		<li><a href="index.html">HOME</a></li>
-             <li><a href="about.html">ABOUT</a></li>
-             <li><a href="archive.html">ARCHIVE</a></li>
-             <li><a href="contact.html">CONTACT</a></li>
-        	<li><a href="search.html">⌕</a></li>
-      	</ul>    
+     	<?php 
+						if ( has_nav_menu ( 'footer_menu' ) ) :
+							wp_nav_menu ( array (
+								'theme_location' => 'secondary',
+								'container' => 'nav'
+							) );
+						endif;
+					?>			   
       	<div class="copyrights">
      		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><br>
       		<small>&copy; 2015 Palo Alto. All Rights Reserved. Designed & Developed by <div id= "budha"> PixelBudha Team</div> </small><br>

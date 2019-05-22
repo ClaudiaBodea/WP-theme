@@ -9,20 +9,20 @@
 
   <body>
     <header class="container"> 
-    	<div class="header">       
-          	<div class="title">
-            	<?php echo get_bloginfo( 'name' ); ?>
-          	</div>
-      	</div>
-      			<div class="primary-menu">
+    		<div class="header">       
+          		<div class="title">
+            		<?php echo get_bloginfo( 'name' ); ?>
+          		</div>
+      		</div>
+      		<div class="primary-menu">
       				<?php 
-						if ( has_nav_menu( 'primary' ) ) : 
-							wp_nav_menu( array(
-						 		'theme_location'  => 'primary',
-						 		'container' => 'nav'
+						if ( has_nav_menu ( 'primary_menu' ) ) :
+							wp_nav_menu ( array (
+								'theme_location' => 'primary',
+								'container' => 'nav'
 							) );
 						endif;
-					?>      			
-            	</div>
+					?>			
+            </div>
             
     </header>
