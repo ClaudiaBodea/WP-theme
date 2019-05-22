@@ -25,6 +25,10 @@ Use it to make something cool, have fun and share what you've learned with other
 @import url('css/header.css');
 @import url('css/footer.css');
 
+html {
+	 background-color: #f9f6f6;
+}
+
 .pagina {
 	display: block;
 	margin-left: 225px;
@@ -35,7 +39,7 @@ Use it to make something cool, have fun and share what you've learned with other
 	padding-right: 161px;
 	padding-bottom: 51px;
 	width: 1055px;
-
+	 background-color: #fff;
   border:4px solid #ebedf0;
   }
 
@@ -100,6 +104,7 @@ Use it to make something cool, have fun and share what you've learned with other
 }
 
 .image {
+	display: inline-block;
 	text-align: center;
 }
 

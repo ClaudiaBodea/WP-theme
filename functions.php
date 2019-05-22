@@ -2,8 +2,8 @@
 if ( ! function_exists ( 'clautheme_setup' ) ) :
 	function clautheme_setup() {
 		// add support for featured image
-		add_theme_support ( 'post-thumbnails');
-		add_image_size ( 'post-image', 1055, 530);
+		// add_theme_support ( 'post-thumbnails');
+		add_image_size ( 'post-image', 1000, 530);
 		add_theme_support ( 'title-tag' );
 		register_nav_menus(
 			array(
