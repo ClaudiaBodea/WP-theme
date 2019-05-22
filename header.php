@@ -18,7 +18,7 @@
       				<?php 
 						if ( has_nav_menu ( 'primary_menu' ) ) :
 							wp_nav_menu ( array (
-								'theme_location' => 'primary',
+								'theme_location' => 'primary_menu',
 								'container' => 'nav'
 							) );
 						endif;

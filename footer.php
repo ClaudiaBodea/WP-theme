@@ -6,7 +6,7 @@
      	<?php 
 						if ( has_nav_menu ( 'footer_menu' ) ) :
 							wp_nav_menu ( array (
-								'theme_location' => 'secondary',
+								'theme_location' => 'footer_menu',
 								'container' => 'nav'
 							) );
 						endif;
