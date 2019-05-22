@@ -1,6 +1,6 @@
 <?php
-if ( ! function_exists ( 'clau_setup' ) ) :
-	function clau_setup() {
+if ( ! function_exists ( 'clautheme_setup' ) ) :
+	function clautheme_setup() {
 		// add support for featured image
 		add_theme_support( 'post-thumbnails', array( 'post' ) ); 
 		add_image_size( 'featured-image', 220, 180 ); 
@@ -9,16 +9,16 @@ if ( ! function_exists ( 'clau_setup' ) ) :
 		add_theme_support ( 'title-tag' );
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary Menu', 'clautheme' ),
-				'secondary'  => __( 'Secondary Menu', 'clautheme' ),
+				'primary_menu' => __( 'Primary Menu', 'clautheme' ),
+				'footer_menu'  => __( 'Secondary Menu', 'clautheme' ),
 			)
 		);
 	}
-	add_action( 'after_setup_theme', 'clau_setup' );
+	add_action( 'after_setup_theme', 'clautheme_setup' );
 endif;
 
-if ( ! function_exists( 'clau_scripts' ) ) :
-	function clau_scripts() {
+if ( ! function_exists( 'clautheme_scripts' ) ) :
+	function clautheme_scripts() {
 		wp_enqueue_style( 'lato_font', 'https://fonts.googleapis.com/css?family=Lato:400,700,700i', array(), false, 'all' );
 		wp_enqueue_style ( 'font_awesome', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', array(), false, 'all');
 		wp_enqueue_style( 'reset', get_stylesheet_directory_uri() . '/css/reset.css', array(), false, 'all');
@@ -26,7 +26,7 @@ if ( ! function_exists( 'clau_scripts' ) ) :
 		wp_enqueue_style('footer', get_stylesheet_directory_uri() . '/css/footer.css', array(), false, 'all');
 		wp_enqueue_style('header', get_stylesheet_directory_uri() . '/css/header.css', array(), false, 'all');
 	}
-	add_action( 'wp_enqueue_scripts', 'clau_scripts');
+	add_action( 'wp_enqueue_scripts', 'clautheme_scripts');
 endif;
 
 // function iap_widgets_init() {
