@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,700i');
 html {
   font-family: Lato;
-   background-color: #f2f0f0;
+  background-color: #ece9e9;
 }
 
 /*
@@ -25,13 +25,13 @@ html {
   padding:0;
   max-width: 1400px;
   width: 95%;
- 
+
 }
 
 .header {
 }
 
-#title h1 {
+.title {
 	display: inline-block;	
 	width: 733px;	
 	height:192px;
@@ -48,8 +48,11 @@ html {
   	margin: 0;
   }
 
+.primary-menu {
 
- nav ul { 	
+}
+
+ .primary-menu ul { 	
  	display: inline-block;	
  	width:667px;
  	height:192px;
@@ -58,18 +61,24 @@ html {
 	margin:0px; 
 }
 
- nav ul li {
+@media screen and (min-width:768px) {
+		.primary-menu ul {
+			display: block;
+		}
+	}
+
+.primary-menu ul li {
  	display: inline;
  	padding: 12px;	
 }
 
-/**nav ul li::after {
+/**primary-menu ul li::after {
   position: relative;
   content: '';
   display: inline-block;
 }*/
 
-nav ul li a {
+.primary-menu ul li a {
 	
   font-family: 'Lato', sans-serif;
   font-weight: bold 700;
@@ -81,19 +90,19 @@ nav ul li a {
   padding-bottom: 9px;
 }
 
- nav ul li a:active {
+ .primary-menu ul li a:active {
   color: #7d7d7d;
 }
 
- nav ul li a:link {
+ .primary-menu ul li a:link {
    color: #000000;
   }
 
- nav ul li a:visited {
+ .primary-menu ul li a:visited {
   color: #000000;
 }
 
-nav ul li a:hover {
+.primary-menu ul li a:hover {
   color: #000000;
   border-bottom: 4px solid #5C6BC0; 
 }

@@ -33,7 +33,7 @@
 		
 			endwhile;
 		else :
-			echo 'nu avem posturi';
+			echo 'No Posts.';
 		endif;
 		
 	?>
