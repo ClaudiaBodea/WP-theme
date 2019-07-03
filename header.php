@@ -8,21 +8,28 @@
   </head>
 
   <body>
-    <header class="container"> 
-    		<div class="header">       
-          		<div class="title">
+    <header class="primary-header container group"> 
+        <div class ="row">
+           <!--  Logo -->
+    		      
+          		<div class="col-sm-6 logo">
             		<?php echo get_bloginfo( 'name' ); ?>
           		</div>
-      		</div>
-      		<div class="primary-menu">
-      				<?php 
-						if ( has_nav_menu ( 'primary_menu' ) ) :
-							wp_nav_menu ( array (
-								'theme_location' => 'primary_menu',
-								'container' => 'nav'
-							) );
-						endif;
-					?>			
-            </div>
+      		
+            <!-- Menu -->
             
+      		    <div class="col-sm-6 menu primary-menu">
+      				  <?php 
+						  if ( has_nav_menu ( 'primary_menu' ) ) :
+							     wp_nav_menu ( array (
+								    'theme_location' => 'primary_menu',
+								    'container' => 'nav'
+							      ) );
+						  endif;
+					   ?>			
+                </div>
+            
+        </div>    
     </header>
+
+
