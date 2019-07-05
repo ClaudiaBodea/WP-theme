@@ -10,14 +10,13 @@
   <body>
     <header class="primary-header container group"> 
         <div class ="row">
-           <!--  Logo -->
-    		      
+
+           <!--  Logo -->    		      
           		<div class="col-sm-6 logo">
             		<?php echo get_bloginfo( 'name' ); ?>
           		</div>
       		
-            <!-- Menu -->
-            
+            <!-- Menu -->            
       		    <div class="col-sm-6 menu primary-menu">
       				  <?php 
 						  if ( has_nav_menu ( 'primary_menu' ) ) :
@@ -27,8 +26,7 @@
 							      ) );
 						  endif;
 					   ?>			
-                </div>
-            
+                </div>            
         </div>    
     </header>
 

@@ -5,18 +5,15 @@
 */
 
 .logo {
+	  font: 700 32px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border-top: 4px solid #5C6BC0;
 	float: left;
-	font-size:32px;
-	font-weight: 700;
 	letter-spacing: .5px;
-	line-height: 40px;
 	padding: 40px 0px 22px 0;	
 	font-style: italic;
 	}
 .primary-menu {
-  font-size: 12px;
-  font-weight: 700;
+	font: 700 12px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
   letter-spacing: .5px;
   text-transform: uppercase;
 }
@@ -32,7 +29,7 @@
 }
 .menu li {
   display: inline-block;
-  margin: 60px 9px 22px 0;
+  margin: 60px 22px 22px 0;
   vertical-align: top;
 
  }
@@ -43,61 +40,14 @@
   ========================================
 */
 
-.primary-header a,
-.primary-footer a {
+.primary-header a {
   color: #000;
   padding-bottom: 9px; 
-}
-.primary-header a:hover,
-.primary-footer a:hover {
+ }
+.primary-header a:hover {
   color: #000;
   border-bottom: 4px solid #5C6BC0; 
 }
-
-
-
- 	/*.primary-menu ul { 	
- 		display: inline-block;	
- 		width:667px;
- 		height:192px;
-		padding:87px 161px;	
-		align-items: right;
-		margin:0px; 
-	}
-
-
-
-	.primary-menu ul li {
- 		display: inline;
- 		padding: 12px;	
-	}
-
-
-
-	.primary-menu ul li a {	
- 	 			font-family: 'Lato', sans-serif;
-  				font-weight: bold 700;
- 				font-style: bold;  
-  					font-size: 12px;   
- 		 text-align: center;
- 	 				color: #7d7d7d;
- 	 				text-decoration: none;
- 		 padding-bottom: 9px;
-	}
-
- 	.primary-menu ul li a:active {
-  		color: #7d7d7d;
-	}
-
- 	.primary-menu ul li a:link {
-  	 	color: #000000;
- 	 }
-
- 	.primary-menu ul li a:visited {
-  		color: #000000;
-	}
-
-	.primary-menu ul li a:hover {
-  		color: #000000;
- 		 border-bottom: 4px solid #5C6BC0; 
-	}*/
+.primary-header a:focus {
+  color: #bdbdbd;
+ }

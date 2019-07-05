@@ -37,5 +37,7 @@
 		endif;
 		
 	?>
+	<!-- div by default wp-page navi . se fva face un css separat numai pt paginare -->
+<?php wp_pagenavi(); ?>
 
 	<?php get_footer(); ?>
