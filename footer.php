@@ -1,4 +1,4 @@
-<footer class="primary-footer container bottom group">
+<footer class="primary-footer container page-end group">
     <div class ="row">
 
            <!--  Logo -->                  
@@ -18,11 +18,21 @@
                        ?>           
                 </div>
 
-            <!-- Copyrights -->
-                <div class="copyrights">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><br>
-                    <small>&copy; 2015 Palo Alto. All Rights Reserved. Designed & Developed by <div id= "budha"> PixelBudha Team</div> </small><br>
+            <!-- Sidebar Widget -->
+                <div class="col-sm-6 widget">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </div>
+
+            <!-- Copyrights -->
+            <div class="col-sm-12">
+                    <small>
+                        <?php 
+                        _e( '&copy; <script>document.write(new Date().getFullYear())</script> IAP. All rights reserved. Designed & Developed by', 'iap' ); 
+                        ?>
+                            <div id= "developer">IAP ClauTheme Team</div>
+                    </small>
+
+            </div>
 
             <!-- Follow -->
                 <div class="follow">

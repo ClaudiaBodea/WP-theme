@@ -3,21 +3,58 @@
   Primary footer
   ========================================
 */
-.bottom {
+.page-end {
     background-color: #5c6bc0;
 }
 .footer-logo {  
-    font: 700 30px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+    font: 700 30px/6px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
   letter-spacing: .5px;  
   font-style: italic;
   color: #4A569A;
   text-align: center;
+  padding-top: 60px;
   }
 .footer-menu {
     font: 700 12px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .5px;
   text-transform: uppercase;
+   padding: 9px 0;
  }
+ .widget {
+  font: 400 9px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .5px;
+  color: #9DA6D9;
+  text-align: center;  
+  padding: 40px 0px;
+  margin:0 320px;
+  border-top: 2px solid #5765b5;
+  border-bottom: 2px solid #5765b5;
+}
+.primary-footer small{
+    font: 400 9px/6px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: .5px;   
+  text-align: center;
+  color: #9DA6D9;
+  display: block;
+  padding: 40px 0;
+ }
+#developer {
+     font: 400 10px/6px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+.follow {
+    font-size: 25px;
+    display: block;
+     text-align: center;
+     color: #fff;
+     padding-bottom: 60px;
+}
+.fab {
+  color: #fff;
+  margin-left: 20px;
+}
 
 /*
   ========================================
@@ -49,52 +86,3 @@
 .primary-footer a:focus {
   color: #4a569a;
   }
-
-.copyrights p{
- /* font-family: 'Lato', sans-serif;*/
-  font-size: 9px;
-    font-weight: 400;
- /* letter-spacing: .5px;*/
-  line-height: 15px;
-/*  display: block;*/
-  text-align: center;
-  color: #9DA6D9;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-top: 2px solid #5765b5;
-  border-bottom: 2px solid #5765b5;
-}
-.copyrights small{
-  font-family: 'Lato', sans-serif;
-  font-size: 9px;
-  display: block;
-  text-align: center;
-  color: #9DA6D9;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-#budha {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  display: inline-block;
-  text-align: center;
-  color: #fff;
-}
-
-.follow {
-	font-size: 25px;
-	display: block;
-	 text-align: center;
-	 color: #fff;
-	 padding-bottom: 65px;
-}
-
-.fab {
-  color: #fff;
-  margin-left: 20px;
-}
-
-   
-*/
-
