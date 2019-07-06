@@ -17,7 +17,7 @@
           		</div>
       		
             <!-- Menu -->            
-      		    <div class="col-sm-6 menu primary-menu">
+      		    <div class="col-sm-6 primary-menu">
       				  <?php 
 						  if ( has_nav_menu ( 'primary_menu' ) ) :
 							     wp_nav_menu ( array (

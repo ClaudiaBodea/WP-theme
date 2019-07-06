@@ -12,13 +12,17 @@
   font-style: italic;
   color: #4A569A;
   text-align: center;
-  padding-top: 60px;
+  padding: 80px 0 40px 0;
   }
 .footer-menu {
     font: 700 12px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .5px;
   text-transform: uppercase;
-   padding: 9px 0;
+    padding: 40px 0;
+    }
+ .footer-menu li {
+  display: inline-block; 
+  margin-left: 50px;
  }
  .widget {
   font: 400 9px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,7 +33,7 @@
   margin:0 320px;
   border-top: 2px solid #5765b5;
   border-bottom: 2px solid #5765b5;
-}
+  }
 .primary-footer small{
     font: 400 9px/6px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: .5px;   
@@ -37,7 +41,7 @@
   color: #9DA6D9;
   display: block;
   padding: 40px 0;
- }
+  }
 #developer {
      font: 400 10px/6px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
@@ -49,8 +53,8 @@
     display: block;
      text-align: center;
      color: #fff;
-     padding-bottom: 60px;
-}
+     padding: 60px 0;
+     }
 .fab {
   color: #fff;
   margin-left: 20px;
