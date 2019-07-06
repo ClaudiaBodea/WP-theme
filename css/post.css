@@ -9,6 +9,13 @@
 	margin-bottom: 50px;
 	border: 4px solid #eceef1;
 }
+.sticky-article {
+	padding:0 100px;
+	background-color: #fff;
+	border:1px solid #ebedf0;
+	margin-bottom: 50px;
+	border: 4px solid #eceef1;
+}
 .title-post{
 	font: 700 30px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: .5px;	

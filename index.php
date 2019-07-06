@@ -18,7 +18,7 @@
             <div class="content-area ">
 
             	<!-- If Is Sticky Article -->
-                <article class="article">
+                
 		           <?php 
 					$i=0;
 					if ( have_posts() ) : 
@@ -43,7 +43,7 @@
 								<div class="tag">
 									 <?php the_tags( ); ?> 
 								</div>
-				</article>
+				
                
 				
 			<?php 
