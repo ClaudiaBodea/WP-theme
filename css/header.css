@@ -51,6 +51,7 @@
   color: #000;
   border-bottom: 4px solid #5C6BC0; 
 }
-.primary-header a:focus {
-  color: #bdbdbd;
- }
+ .primary-header li.current-menu-item a {
+   color: #bdbdbd;
+}
+ 

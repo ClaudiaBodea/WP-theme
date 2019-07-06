@@ -1,7 +1,97 @@
-<?php get_header(); 
-	if ( have_posts() ) :
-			while ( have_posts() ) : 
-				the_post(); ?>
+<?php get_header(); ?>
+<?php 
+	
+	  // No #hero section on my theme. 
+	  // We will create a custom WordPress query and get posts based on a tag/category called featured_post.
+	
+?>
+<div class="content-area container group">
+	<main class="row" role="main">
+		<!--Hero-->
+		<!-- <section class="hero container subtitle"> Here I can include a HERO SECTION for exercise purpose
+            <h2></h2>
+            <p></p>
+            <a class="btn btn-alt" href="rezerva.html">ABC</a>
+    	</section> -->
+
+    	<!--Page Content. Articles-->
+            <div class="grid">
+
+            	<!-- If Is Sticky Article -->
+                    <section class="teaser col-1-3">
+			           <?php 
+						$i=0;
+						if ( have_posts() ) : 
+							while ( have_posts() ) : the_post(); 
+							if ( is_sticky() ) : 
+						?>
+								<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
+									<header class="article-header">
+										<?php 
+											the_post_thumbnail('featured-image-sticky'); 
+										?>
+										<?php 
+											the_category(); 
+										?>
+									</header>
+									<div class="article-title">
+										<?php
+											the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); 
+										?>
+										<span class="article-meta">
+											<?php 
+												echo get_the_date('d F Y'); 
+											?> | 
+											<strong>
+												<?php 
+													echo get_the_author(); 
+												?>
+											</strong>
+										</span>
+									</div>
+								</article>
+                    </section>
+				
+		<?php 
+			else :
+		?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-4'); ?>>
+				<header class="article-header">
+					<?php 
+						the_post_thumbnail('featured-image-small'); 
+					?>
+					<?php 
+						the_category(); ;
+					?>
+				</header>
+				<div class="article-title">
+					<?php 
+						the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); 
+					?>
+					<span class="article-meta">
+						<?php echo get_the_date('d F Y'); ?> | <strong><?php echo get_the_author(); ?></strong>
+					</span>
+				</div>
+			</article>
+		<?php  
+			endif;
+			// End of the while loop. We have listed all the posts.			 
+			endwhile; 
+		else :
+			// If there are no posts to show than display a custom message.
+			echo _e( 'There are no articles to show', 'iap' );
+		endif;
+		?>
+		<?php wp_pagenavi(); ?>
+	</main>
+</div>			
+
+<?php get_footer(); ?>
+
+
+
+
+	
 				<div class="image">
 					<?php the_post_thumbnail(); ?>
 				</div>
@@ -29,15 +119,5 @@
 
 			</div>
 				
-	<?php
-		
-			endwhile;
-		else :
-			echo 'No Posts.';
-		endif;
-		
-	?>
+	
 	<!-- div by default wp-page navi . se fva face un css separat numai pt paginare -->
-<?php wp_pagenavi(); ?>
-
-	<?php get_footer(); ?>

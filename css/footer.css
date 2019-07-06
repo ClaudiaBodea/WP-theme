@@ -87,6 +87,6 @@
   color: #99a3d8;
   border-bottom: 4px solid #5C6BC0; 
 }
-.primary-footer a:focus {
-  color: #4a569a;
-  }
+.primary-footer li.current-menu-item a {
+   color: #4a569a;
+}  
