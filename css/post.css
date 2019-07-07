@@ -32,38 +32,42 @@
 	font:400 12px/10px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   	color: #c1c1c1;  	
 }
+.category {
+	position: relative;
+	left:580px;
+}
 .category a {
 	font:400 12px/10px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   	color: #fff;
   	background-color: #5C6BC0; 
   	padding:8px;
   	white-space: nowrap;
-  	margin-left: 580px;
-  	
+  /*	margin-left: 580px;*/
 }
+.category li:not(:first-child) {
+	display:none;
+}
+.tag {
+	position: relative;
+	bottom:50px;
+	left:400px;
+}
+.tag a{
+	font:400 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	color: #c1c1c1;  	
+	padding: 11px 3px;	
+	display: inline-block;
+	}
 
 
-
-
-
+}
+/*
 .image {
 	display: inline-block;
 	text-align: center;
 }
 
 
-
-
-/*  
-.content-area {
-	margin:0 220px;
-	background-color: #000;
-}
-.site-main {
-	padding:0 220px;
-	margin: 45px auto;
-	border: 4px solid #5C6BC0;
-}
 article.hentry {
 	margin-bottom: 65px;
 }
@@ -71,30 +75,12 @@ article.hentry {
 	position: relative;
 	margin-bottom: 20px;
 }
-.article-header .post-categories {
-	list-style:none;
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	bottom:23px;
-	left:0;
-	z-index: 2;
+
+
 }
-.article-header .post-categories li {
-	background: #58b600;
+
 }
-.article-header .post-categories a {
-	color:#fff;
-	padding: 11px 18px;
-	font-size: 18px;
-	font-weight: 700;
-	display: inline-block;
-	text-decoration: none;
-	line-height: 100%;
-}
-.article-header .post-categories a:hover {
-	text-decoration: none;
-}
+
 
 .article-title h2 {
 	margin-top: 0;
@@ -104,15 +90,6 @@ article.hentry {
 
 
 
-
-
-
-
-
-.article-title .article-meta {
-	color:#b0b0b0;
-	font-size: 14px;
-}
 article.sticky {
 	margin-bottom: 30px;
 }
@@ -158,9 +135,3 @@ article.sticky {
 .content-area h1 {
 	font-size: 36px;
 }
-.category-nature .post-categories li {
-	background: blue;
-}
-.category-trips .post-categories li {
-	background: red;
-}*/

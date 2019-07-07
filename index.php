@@ -26,7 +26,7 @@
 						if ( is_sticky() ) : 
 					?>
 								<div class="image">
-										<?php the_post_thumbnail('featured-image-small'); ?>
+										<?php the_post_thumbnail('featured-image'); ?>
 								</div>
 								<div class="category">
 									<?php the_category(); ?>
@@ -67,7 +67,7 @@
 							<?php the_content(); ?>
 						</div>
 						<div class="tag">
-							 <?php the_tags( ); ?> 
+							 <?php the_tags('#','#'); ?> 
 						</div>						
 				</article>
 				

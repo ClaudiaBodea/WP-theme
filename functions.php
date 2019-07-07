@@ -4,7 +4,7 @@ if ( ! function_exists ( 'clautheme_setup' ) ) :
 				// Add support for featured image
 				add_theme_support( 'post-thumbnails' );
 				// Create image sizes based on theme design
-				add_image_size( 'featured-image', 220, 180 ); 
+				add_image_size( 'featured-image', 960, 530 ); 
 				add_image_size( 'featured-image-small', 380, 255, true ); 
 				add_image_size( 'featured-image-sticky', 1200, 400, true );
 				// Add theme support, title provided by WP
