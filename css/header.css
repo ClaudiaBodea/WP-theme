@@ -6,19 +6,54 @@
 
 .logo {
 	  font: 700 32px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	border-top: 4px solid #5C6BC0;
-	float: left;
-	/*letter-spacing: .5px;*/
-	padding: 40px 0 22px 220px;	
+	border-top: 4px solid #5C6BC0;	
+	letter-spacing: .5px;
 	font-style: italic;
+	 float: left;
+	 width: 50%
 	}
+
+	/*@media (min-width: 768px) {
+  		.logo {
+    	width: 50%;
+ 	 }
+	}
+	@media (min-width: 992px) {
+	  .logo {
+	    width: 50%;
+	  }
+	}*/
+	@media (min-width: 1230px) {
+	  .logo {
+	    padding: 40px 0 22px 220px;	
+	    width:50%;
+	  }
+	}
+
 .primary-menu {
 	font: 700 12px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-  /*letter-spacing: .5px;*/
+  letter-spacing: .5px;
   text-transform: uppercase;
    padding: 40px 220px 22px 0;
    text-align: right;
    }
+   @media (min-width: 768px) {
+  		.primary-menu {
+    	width: 33.33333333%;
+ 	 }
+	}
+	@media (min-width: 992px) {
+	  .primary-menu {
+	    width: 66.66666667%;
+	  }
+	}
+	@media (min-width: 1230px) {
+	  .primary-menu {
+	    padding: 40px 220px 22px 0;
+	    width:50%;
+	  }
+	}
+
 
 /*
   ========================================

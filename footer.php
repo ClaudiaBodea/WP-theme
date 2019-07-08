@@ -7,7 +7,7 @@
                 </div>
             
             <!-- Menu -->            
-                <div class="col-sm-12 menu footer-menu">
+                <div class="col-sm-12 footer-menu">
                       <?php 
                           if ( has_nav_menu ( 'footer_menu' ) ) :
                                  wp_nav_menu ( array (

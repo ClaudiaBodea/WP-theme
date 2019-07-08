@@ -49,14 +49,17 @@
 			<?php 
 				else :
 			?>
-				<!-- Normal Articles -->	
+				<!-- Normal Articles -->
+				
+				<div class="image">
+					<?php the_post_thumbnail('featured-image-small'); ?>
+				</div>
+				<div class="category">
+					<?php the_category(); ?>
+				</div>	
 				<article class="article">						
-						<div class="image">
-							<?php the_post_thumbnail('featured-image-small'); ?>
-						</div>
-						<div class="category">
-							<?php the_category(); ?>
-						</div>
+						
+						
 						<div class="date">
 							<?php echo get_the_date('F Y'); ?> 
 						</div>					
@@ -82,7 +85,9 @@
 			?>
 
 			<!--Page Number-->
-			<?php wp_pagenavi(); ?>
+			<div class="pagenavi">
+				<?php wp_pagenavi(); ?>
+			</div>
 			</div>
 	</main>
 </div>			
