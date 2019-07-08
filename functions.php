@@ -3,10 +3,11 @@ if ( ! function_exists ( 'clautheme_setup' ) ) :
 		function clautheme_setup() {
 				// Add support for featured image
 				add_theme_support( 'post-thumbnails' );
+				set_post_thumbnail_size( 220, 180 );
 				// Create image sizes based on theme design
-				add_image_size( 'featured-image', 960, 530 ); 
-				add_image_size( 'featured-image-small', 380, 255, true ); 
-				add_image_size( 'featured-image-sticky', 1200, 400, true );
+				add_image_size( 'featured-image', 1200, 470 ); 
+				// add_image_size( 'featured-image-small', 380, 255, true ); 
+				// add_image_size( 'featured-image-sticky', 1200, 400, true ); 
 				// Add theme support, title provided by WP
 				add_theme_support ( 'title-tag' );
 				// Add nav menus. This theme uses wp_nav_menu() in two locations.
@@ -58,17 +59,4 @@ endif;
 //   	// Move comment field last.
 // 	$fields['comment'] = array_shift( $fields );
 //   return $fields;
-// }
-
-
-
-
-// $(function () {
-//   $('ul').hide();
-//   $('span#toggleMenu').on('click', function (e) {
-//     $('ul').slideToggle();
-//   });
-// });
-// if($(window).width() <= 860) {
-//   $('span#toggleMenu').hide();
 // }

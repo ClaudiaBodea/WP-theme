@@ -52,14 +52,12 @@
 				<!-- Normal Articles -->
 				
 				<div class="image">
-					<?php the_post_thumbnail('featured-image-small'); ?>
-				</div>
-				<div class="category">
+					<?php the_post_thumbnail('featured-image'); ?>
+					<div class="category">
 					<?php the_category(); ?>
-				</div>	
-				<article class="article">						
-						
-						
+					</div>
+				</div><!--
+				--><article class="article">							
 						<div class="date">
 							<?php echo get_the_date('F Y'); ?> 
 						</div>					
