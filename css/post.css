@@ -83,10 +83,17 @@
   	white-space: nowrap;
 }
 
-
 @media (min-width: 768px) {
      .content-area {
-		margin:0 220px;	 	
+		margin:0 50px;	 	
+  		}
+  	.article {
+		padding:0 25px;
+		}	
+    }
+@media (min-width: 992px) {
+     .content-area {
+		margin:0 200px;	 	
   		}
   	.article {
 		padding:0 100px;
