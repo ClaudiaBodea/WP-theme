@@ -59,3 +59,16 @@ endif;
 // 	$fields['comment'] = array_shift( $fields );
 //   return $fields;
 // }
+
+
+
+
+// $(function () {
+//   $('ul').hide();
+//   $('span#toggleMenu').on('click', function (e) {
+//     $('ul').slideToggle();
+//   });
+// });
+// if($(window).width() <= 860) {
+//   $('span#toggleMenu').hide();
+// }

@@ -18,10 +18,9 @@
           		</div>
       		
             <!-- Menu -->                                   
-      		    <div class="col-sm-6 primary-menu">
-                    <input type="checkbox" id="toggle">
-                    <label for="toggle">&#9776;</label> 
-                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+      		    <div class="col-sm-6 primary-menu">                   
+                        <input type="checkbox" id="toggle">
+                            <label for="toggle">&#9776;</label>                  
       				  <?php 
 						  if ( has_nav_menu ( 'primary_menu' ) ) :
 							     wp_nav_menu ( array (

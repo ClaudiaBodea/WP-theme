@@ -23,7 +23,7 @@
     }
  .footer-menu li {
   display: block; 
-  margin: 5px 25px;
+  margin: 5px 0;
   width: 100%
  }
  @media (min-width: 768px) {
