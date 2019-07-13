@@ -1,41 +1,38 @@
 .content-area {
-	margin:0 15px auto;	
-	
-  	
+	margin:0 15px auto;	  	
   }
-.article {
+.article-inner {
 	padding:0 15px;
 	background-color: #fff;
-	border:1px solid #ebedf0;
+	box-shadow: :1px solid #ebedf0;
 	margin-bottom: 50px;
-	border: 4px solid #eceef1;
-}
-/*.sticky-article {
-	padding:0 100px;
-	background-color: #fff;
-	border:1px solid #ebedf0;
-	margin-bottom: 50px;
-	border: 4px solid #eceef1;
-}*/
+	position:relative;
+	}
 .title-post{
 	font: 700 30px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: .5px;	
 	border-bottom: 1px solid #eee;
-	padding: 25px 0 40px 0;
+	padding: 15px 0 20px 0;
+	word-wrap: break-word;
+}
+.more-link {
+	text-transform: uppercase;
 }
 .post {
-	font:400 14px/14px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	line-height: 1.6;
-	padding: 25px 0 40px 0;
+	font:400 14px/1.6 "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 15px 0 20px 0;
 	align-items: left;
+	word-wrap: break-word;
 	}
 .date {
 	font:400 12px/10px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	color: #c1c1c1;  	
+  	color: #c1c1c1;  
+  	padding:11px 3px;	
 }
 .category {
-	text-align: right;
-	margin:0 auto;
+	position:absolute;
+	right: -10px;
+	top:3.5px;
 }
 .category a {
 	font:400 12px/10px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -48,9 +45,8 @@
 	display:none;
 }
 .tag {
-	position: relative;
-	bottom:50px;
-	left:400px;
+	text-align: right;
+	margin:0 auto;
 }
 .tag a{
 	font:400 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -87,28 +83,43 @@
      .content-area {
 		margin:0 50px;	 	
   		}
-  	.article {
+  	.article-inner {
 		padding:0 25px;
-		}	
+		}
+	.title-post {
+		padding: 20px 0 25px 0;
+		}
+	.post {
+		padding: 20px 0 25px 0;
+		}
+	.image {
+		display: block; 
+		margin-left: auto; 
+		margin-right: auto}
+		}		
     }
 @media (min-width: 992px) {
      .content-area {
 		margin:0 200px;	 	
   		}
-  	.article {
+  	.article-inner {
 		padding:0 100px;
 		}	
+	.title-post {
+		padding: 25px 0 40px 0;
+		}
+	.post {
+		padding: 25px 0 40px 0;
+		}			
     }
 
 
-.image {     
-     margin: 0 auto;
-     border: solid black 1px
-     text-align:center;
-	}
+
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+
+attachment-thumbnail .size-thumbnail {display: block; margin-left: auto; margin-right: auto}

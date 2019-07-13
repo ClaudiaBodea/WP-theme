@@ -40,8 +40,9 @@
   border-top: 2px solid #5765b5;
   border-bottom: 2px solid #5765b5;
   text-align: center;  
-  padding: 40px 10px 20px 10;
+  padding: 20px 10px 20px 10px;
   width: auto;
+  display: block;
   }
   @media (min-width: 1230px) {
       .widget {
@@ -55,7 +56,7 @@
   text-align: center;
   color: #9DA6D9;
   display: block;
-  padding: 20px 10 20px 10;
+  padding: 20px 10px 20px 10px;
   width: 100%;
   margin:0 auto;
   }

@@ -8,11 +8,22 @@
 <div class="container group">
 	<main class="row" role="main">
 		<!--Hero-->
-		<!-- <section class="hero container subtitle"> Here I can include a HERO SECTION for exercise purpose
-            <h2></h2>
-            <p></p>
-            <a class="btn btn-alt" href="rezerva.html">ABC</a>
-    	</section> -->
+		<!-- <section id="hero" class="hero container subtitle">
+			<?php if (has_post_thumbnail()): ?>
+				<div class="hero-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
+					<?php else: ?>
+					<div class="hero-item">
+					<?php endif; ?>
+						<div class="hero-content container">
+							<div class="hero-avatar">
+								<?php echo get_avatar(get_the_author_meta('user_email')); ?>
+							</div>
+							<div class="hero-title">
+				<?php the_title(); ?>
+			</div>
+            </div>
+            </div>
+            </section> -->
 
     	<!--Page Content. Articles-->
             <div class="content-area ">
@@ -25,24 +36,28 @@
 						while ( have_posts() ) : the_post(); 
 						if ( is_sticky() ) : 
 					?>
+						<article class="article">
 								<div class="image">
 										<?php the_post_thumbnail('featured-image'); ?>
 								</div>
-								<div class="category">
-									<?php the_category(); ?>
+								<div class = "article-inner"> 									
+									<div class="date">
+										<?php echo get_the_date('F Y'); ?> | <strong><?php echo get_the_author(); ?></strong>
+									</div>	
+									<div class="category">
+										<?php the_category(); ?>
+									</div>				
+									<div class="title-post">
+										<?php the_title(); ?>
+									</div>
+									<div class="post">
+										<?php the_content(); ?>
+									</div>
+									<div class="tag">
+										 <?php the_tags( ); ?> 
+									</div>
 								</div>
-								<div class="date">
-									<?php echo get_the_date('F Y'); ?> 
-								</div>					
-								<div class="title-post">
-									<?php the_title(); ?>
-								</div>
-								<div class="post">
-									<?php the_content(); ?>
-								</div>
-								<div class="tag">
-									 <?php the_tags( ); ?> 
-								</div>
+						</article>
 				
                
 				
@@ -50,17 +65,19 @@
 				else :
 			?>
 				<!-- Normal Articles -->
-				
+				<article class="article">
 				<div class="image">
-					<?php the_post_thumbnail('featured-image'); ?>
-					<div class="category">
-					<?php the_category(); ?>
-					</div>
-				</div><!--
-				--><article class="article">							
+						<?php the_post_thumbnail('featured-image'); ?>
+					</div>					
+				
+				<div class = "article-inner"> 						
 						<div class="date">
-							<?php echo get_the_date('F Y'); ?> 
-						</div>					
+							<?php echo get_the_date('F Y'); ?> | <strong><?php echo get_the_author(); ?></strong>
+						</div>
+						<div class="category">
+						<?php the_category(); ?>
+						</div>
+
 						<div class="title-post">
 							<?php the_title(); ?>
 						</div>
@@ -69,7 +86,8 @@
 						</div>
 						<div class="tag">
 							 <?php the_tags('#','#'); ?> 
-						</div>						
+						</div>	
+				</div>					
 				</article>
 				
 			<?php  
@@ -91,6 +109,3 @@
 </div>			
 
 <?php get_footer(); ?>
-
-			
-	<!-- div by default wp-page navi . se fva face un css separat numai pt paginare -->

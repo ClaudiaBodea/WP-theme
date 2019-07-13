@@ -65,12 +65,16 @@ input {
 	}
 	
 
-	/*@media (min-width: 768px) {
-		input, 
-		label {
+	@media (min-width: 1230px) {
+		 label {
 			display: none;
 		}
-	}*/
+		.primary-menu ul {
+			width: auto;
+		}
+		.primary-menu nav {
+		max-height: initial;
+	}
 
 .primary-menu {
 	font: 700 12px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
