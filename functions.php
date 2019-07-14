@@ -59,3 +59,16 @@ endif;
 // 	$fields['comment'] = array_shift( $fields );
 //   return $fields;
 // }
+
+
+add_filter( 'tiled_gallery_content_width', 'crunchify_tiled_gallery_width' );
+function crunchify_tiled_gallery_width($width){
+    $tiled_gallery_content_width = $width;
+    $width = 640;
+    return $width;
+}
+add_filter( 'embed_defaults', 'bigger_embed_size' );
+function bigger_embed_size()
+{
+    return array('width' => 600, 'height' => 400);
+}
