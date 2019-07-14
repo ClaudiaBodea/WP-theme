@@ -3,7 +3,7 @@
 	min-height: calc(100vh - 70px);
 	background-image:url('../img/featured-image.png');
 	background-size: contain;
-	background-repeat: no-repeat;
+	/*background-repeat: no-repeat;*/
 }
 .hero-item:after {
 	content:" ";
@@ -36,5 +36,6 @@
 	padding: 15px 0 20px 0;
 	word-wrap: break-word;
 	text-align: center;
+	color: #5C6BC0;
 
 }
