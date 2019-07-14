@@ -3,7 +3,7 @@ if ( ! function_exists ( 'clautheme_setup' ) ) :
 		function clautheme_setup() {
 				
 				add_theme_support( 'post-thumbnails' );
-				set_post_thumbnail_size( 1200, 480 );
+				// set_post_thumbnail_size( 1200, 480 );
 				add_image_size( 'featured-image', 1200, 480 ); 
 				// add_image_size( 'featured-image-small', 380, 255, true ); 
 				// add_image_size( 'featured-image-sticky', 1200, 400, true ); 
