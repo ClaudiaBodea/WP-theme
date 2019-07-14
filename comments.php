@@ -15,7 +15,11 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<!-- <div id="comments" class="container group">
+	<main class="row" role="main"> -->
+
+		<!--Comments-->
+            <div class="content-area ">
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">

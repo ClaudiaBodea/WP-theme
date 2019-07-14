@@ -33,23 +33,9 @@
         width: auto;
       }
     }
- .widget {
-  font: 400 9px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: .5px;
-  color: #9DA6D9;
-  border-top: 2px solid #5765b5;
-  border-bottom: 2px solid #5765b5;
-  text-align: center;  
-  padding: 20px 10px 20px 10px;
-  width: auto;
-  display: block;
-  }
-  @media (min-width: 1230px) {
-      .widget {
-          margin:0 320px;
-          width: auto;
-      }
-    }
+
+
+
 .primary-footer small{
     font: 400 9px/6px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: .5px;   
@@ -91,6 +77,30 @@
       margin-left: 20px;
     }
 
+/*
+  ========================================
+  Widget
+  ========================================
+*/
+ /*.widget {
+  font: 400 9px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .5px;
+  color: #9DA6D9;
+  border-top: 2px solid #5765b5;
+  border-bottom: 2px solid #5765b5;
+  text-align: center;  
+  padding: 20px 10px 20px 10px;
+  width: auto;
+  display: block;
+  }
+  @media (min-width: 1230px) {
+      .widget {
+          margin:0 320px;
+          width: auto;
+      }
+    }
+
+*/
 /*
   ========================================
   Footer Navigation

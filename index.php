@@ -5,25 +5,53 @@
 	  // We will create a custom WordPress query and get posts based on a tag/category called featured_post.
 	
 ?>
-<div class="container group">
-	<main class="row" role="main">
-		<!--Hero-->
-		<!-- <section id="hero" class="hero container subtitle">
-			<?php if (has_post_thumbnail()): ?>
-				<div class="hero-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
-					<?php else: ?>
-					<div class="hero-item">
-					<?php endif; ?>
-						<div class="hero-content container">
-							<div class="hero-avatar">
-								<?php echo get_avatar(get_the_author_meta('user_email')); ?>
-							</div>
-							<div class="hero-title">
-				<?php the_title(); ?>
+
+<section class="hero-slider">
+<?php
+	// Query arguments : https://codex.wordpress.org/Class_Reference/WP_Query
+	$args = array(
+		'posts_per_page'	=> 2,
+		'orderby'			=> 'date',
+		'order'				=> 'DESC',
+    	// 'category_name' 	=> 'featured'
+	);
+	
+	// create the query
+	$slider = new WP_Query($args);
+	
+	// loop through the new created query  
+	if ( $slider->have_posts() ) :
+		while ( $slider->have_posts() ) : $slider->the_post();
+			?>
+			<div id="hero" <?php post_class('hero'); ?>>
+			<style>
+				.post-<?php echo get_the_ID(); ?> .hero-item {
+					background-image: url(<?php echo get_the_post_thumbnail_url( get_the_ID(), 'full' );?>);
+				}
+			</style>
+				<div class="hero-item">
+					<div class="hero-content container">
+						<div class="hero-avatar">
+							<?php echo get_avatar(get_the_author_meta('user_email')); ?>
+						</div>
+						<div class="hero-title">
+							<?php the_title(); ?>
+						</div>
+					</div>
+				</div>
 			</div>
-            </div>
-            </div>
-            </section> -->
+			<?php
+		endwhile;
+	else: 
+		echo __( 'There are no posts to show', 'textdomain' );
+	endif;
+	
+	wp_reset_postdata(); 
+?>
+</section>
+
+<div  id="primary" class="container group">
+	<main class="row" role="main">
 
     	<!--Page Content. Articles-->
             <div class="content-area ">
@@ -32,9 +60,9 @@
                 
 		           <?php 
 					$i=0;
-					if ( have_posts() ) : 
-						while ( have_posts() ) : the_post(); 
-						if ( is_sticky() ) : 
+					if ( have_posts() ) : 	
+							while ( have_posts() ) : the_post(); 
+							if ( is_sticky() ) : 
 					?>
 						<article class="article">
 								
@@ -104,8 +132,8 @@
 			<div class="pagenavi">
 				<?php wp_pagenavi(); ?>
 			</div>
-			</div>
-	</main>
-</div>			
+		</div> <!-- content-area -->
+	</main>  <!-- row -->
+</div>	<!-- container group -->		
 
 <?php get_footer(); ?>
