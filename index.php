@@ -35,7 +35,7 @@
 							<?php echo get_avatar(get_the_author_meta('user_email')); ?>
 						</div>
 						<div class="hero-title">
-							<?php the_title(); ?>
+							<?php the_title( sprintf('<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>');?>
 						</div>
 					</div>
 				</div>
@@ -76,7 +76,7 @@
 										<?php the_category(); ?>
 									</div>				
 									<div class="title-post">
-										<?php the_title(); ?>
+										<?php the_title( sprintf('<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>');?>
 									</div>
 									<div class="post">
 										<?php the_content(); ?>
@@ -107,7 +107,7 @@
 						</div>
 
 						<div class="title-post">
-							<?php the_title(); ?>
+							<?php the_title( sprintf('<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>');?>
 						</div>
 						<div class="post">
 							<?php the_content(); ?>

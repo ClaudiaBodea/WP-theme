@@ -33,8 +33,9 @@
 	.category li:not(:first-child) {
 		display:none;
 	}
-.title-post {
+.title-post a {
 	font: 700 30px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#000;
 	letter-spacing: .5px;	
 	border-bottom: 1px solid #eee;
 	padding: 15px 0 20px 0;
