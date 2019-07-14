@@ -1,15 +1,15 @@
 <?php
 if ( ! function_exists ( 'clautheme_setup' ) ) :
 		function clautheme_setup() {
-				// Add support for featured image
+				
 				add_theme_support( 'post-thumbnails' );
-				// Create image sizes based on theme design
+				set_post_thumbnail_size( 1200, 480 );
 				add_image_size( 'featured-image', 1200, 480 ); 
 				// add_image_size( 'featured-image-small', 380, 255, true ); 
 				// add_image_size( 'featured-image-sticky', 1200, 400, true ); 
 				// Add theme support, title provided by WP
 				add_theme_support ( 'title-tag' );
-				// Add nav menus. This theme uses wp_nav_menu() in two locations.
+				
 				register_nav_menus(
 						array(
 								'primary_menu' => __( 'Primary Menu', 'clautheme' ),

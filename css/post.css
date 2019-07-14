@@ -1,28 +1,15 @@
 .content-area {
 	margin:0 15px auto;	  	
   }
+ .article {
+
+ }
 .article-inner {
 	padding:0 15px;
 	background-color: #fff;
-	box-shadow: :1px solid #ebedf0;
+	box-shadow: 5px 10px 30px #ebedf0;
 	margin-bottom: 50px;
 	position:relative;
-	}
-.title-post{
-	font: 700 30px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	letter-spacing: .5px;	
-	border-bottom: 1px solid #eee;
-	padding: 15px 0 20px 0;
-	word-wrap: break-word;
-}
-.more-link {
-	text-transform: uppercase;
-}
-.post {
-	font:400 14px/1.6 "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding: 15px 0 20px 0;
-	align-items: left;
-	word-wrap: break-word;
 	}
 .date {
 	font:400 12px/10px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -33,27 +20,54 @@
 	position:absolute;
 	right: -10px;
 	top:3.5px;
+	z-index: 2;
 }
-.category a {
-	font:400 12px/10px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	color: #fff;
-  	background-color: #5C6BC0; 
-  	padding:8px;
-  	white-space: nowrap;
+	.category a {
+		font:400 12px/10px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  	color: #fff;
+	  	background-color: #5C6BC0; 
+	  	padding:8px;
+	  	white-space: nowrap;
+	}
+	.category li:not(:first-child) {
+		display:none;
+	}
+.title-post {
+	font: 700 30px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: .5px;	
+	border-bottom: 1px solid #eee;
+	padding: 15px 0 20px 0;
+	word-wrap: break-word;
 }
-.category li:not(:first-child) {
-	display:none;
+	.title-post a:hover{
+		color:#5C6BC0;
+	}
+.image {
+	max-width: 100%;
+	height: auto;
+}
+.post {
+	font:400 14px/1.6 "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 15px 0 20px 0;
+	align-items: left;
+	word-wrap: break-word;
+	}
+	.post h1{
+		font-size: 30px;
+	}
+.more-link {
+	text-transform: uppercase;
 }
 .tag {
 	text-align: right;
 	margin:0 auto;
 }
-.tag a{
-	font:400 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  	color: #c1c1c1;  	
-	padding: 11px 3px;	
-	display: inline-block;
-	}
+	.tag a{
+		font:400 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  	color: #c1c1c1;  	
+		padding: 11px 3px;	
+		display: inline-block;
+		}
 .pagenavi {
 	position: relative;
 	bottom:25px;
@@ -61,23 +75,23 @@
 	margin: 0 auto;
 	text-align: center;
 }
-.pagenavi a{
-	font:700 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #000;
-  	background-color: #fff;
-  	padding: 4px 8px; 
-  	border: 2px solid #eceef1;
-  	margin-left: 5px;
-   }
-.wp-pagenavi span.current {
-	font:700 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   color: #fff;
-  	background-color: #5C6BC0; 
-  	padding: 4px 8px; 
-  	border: 2px solid #5C6BC0;
-  	margin-left: 5px;
-  	white-space: nowrap;
-}
+	.pagenavi a{
+		font:700 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #000;
+	  	background-color: #fff;
+	  	padding: 4px 8px; 
+	  	border: 2px solid #eceef1;
+	  	margin-left: 5px;
+	   }
+	.wp-pagenavi span.current {
+		font:700 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	   color: #fff;
+	  	background-color: #5C6BC0; 
+	  	padding: 4px 8px; 
+	  	border: 2px solid #5C6BC0;
+	  	margin-left: 5px;
+	  	white-space: nowrap;
+	}
 
 @media (min-width: 768px) {
      .content-area {
@@ -92,12 +106,7 @@
 	.post {
 		padding: 20px 0 25px 0;
 		}
-	.image {
-		display: block; 
-		margin-left: auto; 
-		margin-right: auto}
-		}		
-    }
+	}
 @media (min-width: 992px) {
      .content-area {
 		margin:0 200px;	 	
@@ -115,11 +124,11 @@
 
 
 
-img.alignright {float:right; margin:0 0 1em 1em}
+img.alignright {float:right; margin:0 0 1em 1em; padding:0 0 20px 20px; }
 img.alignleft {float:left; margin:0 1em 1em 0}
 img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
-attachment-thumbnail .size-thumbnail {display: block; margin-left: auto; margin-right: auto}
+
