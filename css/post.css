@@ -53,9 +53,7 @@
 	align-items: left;
 	word-wrap: break-word;
 	}
-	.post h1{
-		font-size: 30px;
-	}
+	
 .more-link {
 	text-transform: uppercase;
 }
@@ -94,44 +92,36 @@
 	  	white-space: nowrap;
 	}
 
-@media (min-width: 768px) {
-     .content-area {
-		margin:0 50px;	 	
-  		}
-  	.article-inner {
-		padding:0 25px;
-		}
-	.title-post {
-		padding: 20px 0 25px 0;
-		}
-	.post {
-		padding: 20px 0 25px 0;
-		}
-	}
-@media (min-width: 992px) {
-     .content-area {
-		margin:0 200px;	 	
-  		}
-  	.article-inner {
-		padding:0 100px;
-		}	
-	.title-post {
-		padding: 25px 0 40px 0;
-		}
-	.post {
-		padding: 25px 0 40px 0;
-		}			
-    }
+
 
 blockquote {
 width: auto;
 background-color: #f9f9f9;
-border: 1px solid ##c1c1c1;
+border: 1px solid #c1c1c1;
 border-radius: 6px;
-box-shadow: 1px 1px 1px ##c1c1c1;
+box-shadow: 1px 1px 1px #c1c1c1;
 font-style: italic;
 text-align: center;
 }
+
+table {
+	width:auto;
+	border:none;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.jsgrid .jsgrid-row>.jsgrid-cell,
+.jsgrid .jsgrid-alt-row>.jsgrid-cell,
+.jsgrid .jsgrid-grid-header,
+.jsgrid .jsgrid-header-row>.jsgrid-header-cell {
+    background: transparent !important;
+}
+
+.class{
+        list-style-type: inherit;
+}
+
 
 img {
   width: auto ;
@@ -248,4 +238,90 @@ a img.aligncenter {
 	width: auto;
 	z-index: 100000;
 	/* Above WP toolbar. */
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Responsive
+  ========================================
+*/
+
+@media (min-width: 768px) {
+     .content-area {
+		margin:0 50px;	 	
+  		}
+  	.article-inner {
+		padding:0 25px;
+		}
+	.title-post {
+		padding: 20px 0 25px 0;
+		}
+	.post {
+		padding: 20px 0 25px 0;
+		}
+	}
+@media (min-width: 992px) {
+     .content-area {
+		margin:0 200px;	 	
+  		}
+  	.article-inner {
+		padding:0 100px;
+		}	
+	.title-post {
+		padding: 25px 0 40px 0;
+		}
+	.post {
+		padding: 25px 0 40px 0;
+		}			
+    }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+  font-size: 26px;
+  }
+h2 {
+  font-size: 24px;
+  }
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+  }
+h6 {
+	font-size: 16px;
+}
+strong {
+  font-weight: 600;
+}
+cite, 
+em {
+  font-style: italic;
 }
