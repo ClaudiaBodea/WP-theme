@@ -37,9 +37,9 @@
 						if ( is_sticky() ) : 
 					?>
 						<article class="article">
-								<div class="image">
+								
 										<?php the_post_thumbnail('featured-image'); ?>
-								</div>
+								
 								<div class = "article-inner"> 									
 									<div class="date">
 										<?php echo get_the_date('F Y'); ?> | <strong><?php echo get_the_author(); ?></strong>
@@ -66,9 +66,9 @@
 			?>
 				<!-- Normal Articles -->
 				<article class="article">
-				<div class="image">
+				
 						<?php the_post_thumbnail('featured-image'); ?>
-					</div>					
+										
 				
 				<div class = "article-inner"> 						
 						<div class="date">
