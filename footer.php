@@ -1,3 +1,8 @@
+<?php 
+/**
+ * The template for displaying the footer
+ */
+?>
 <footer class="primary-footer container page-end group">
     <div class ="row">
 
@@ -36,6 +41,7 @@
 
             <!-- Follow -->
                 <div class="follow">
+                  <!-- <?php get_sidebar(); ?> -->
                     <a href="http://facebook.com"target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="http://twitter.com"target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="http://instagram.com"target="_blank"><i class="fab fa-instagram"></i></a>

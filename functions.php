@@ -37,18 +37,21 @@ endif;
 function iap_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => __( 'Sidebar', 'iaptheme' ),
+			'name'          => __( 'Footer Sidebar', 'iaptheme' ),
 			'id'            => 'sidebar-1',
 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'iaptheme' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
 			'after_title'   => '</h3>',
-		)
-	);	
-}
+			)
+		);
+
+	}
 add_action( 'widgets_init', 'iap_widgets_init' );
 add_filter( 'comment_form_fields', 'example_order_comment_form_fields' );
+
+
 
 function example_order_comment_form_fields( $fields ) {
   	// Move comment field last.

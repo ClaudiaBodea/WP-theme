@@ -4,7 +4,7 @@
   ========================================
 */
 
-.logo {
+.logo a{
 	  font: 700 32px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border-top: 4px solid #5C6BC0;	
 	letter-spacing: .5px;
@@ -13,16 +13,6 @@
 	 width: 50%
 	}
 
-	/*@media (min-width: 768px) {
-  		.logo {
-    	width: 50%;
- 	 }
-	}
-	@media (min-width: 992px) {
-	  .logo {
-	    width: 50%;
-	  }
-	}*/
 	@media (min-width: 1230px) {
 	  .logo {
 	    padding: 40px 0 22px 220px;	
@@ -32,11 +22,6 @@
 input {
   display: none;
 	}
-	label,
-	/*ul {
-	  border: 1px solid #cecfd5;
-	  border-radius: 6px;
-	}*/
 	label {
 	  color: #5C6BC0;
 	  cursor: pointer;

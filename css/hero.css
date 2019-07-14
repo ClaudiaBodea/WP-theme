@@ -2,7 +2,8 @@
 	position: relative;
 	min-height: calc(100vh - 70px);
 	background-image:url('../img/featured-image.png');
-	background-size:cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .hero-item:after {
 	content:" ";
@@ -27,10 +28,13 @@
 .hero-avatar img {
 	display: inline-block;
 	border-radius:50%;
+	margin:0 auto;
 }
 .hero-title {
-	font-size: 48px;
-	font-weight: 700;
-	color:#fff;
+	font: 700 30px/36px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: .5px;	
+	padding: 15px 0 20px 0;
+	word-wrap: break-word;
 	text-align: center;
+
 }
