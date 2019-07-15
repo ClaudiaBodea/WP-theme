@@ -27,23 +27,20 @@
 						<div class="title-post"><h1><?php the_title(); ?></h1></div>
 						<div class="post"><?php the_content(); ?></div>
 						<div class="tag"><?php the_tags('#','#'); ?></div>
-					</div>
-
 					
-						<blockquote>
+					
+						<div class = "commentlist">
 						<?php						
 							if ( comments_open() || get_comments_number() ) {
 								comments_template();
 							}
 							endwhile; 
 						?>
-						</blockquote>
+						</div>
 					
-					
-
+					</div>
 										
 						<?php the_widget( 'WP_Widget_Categories', 'dropdown=1&count=1' ); ?> 
-					
 					
 					
 						<div class = "title-post">
