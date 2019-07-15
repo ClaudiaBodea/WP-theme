@@ -27,8 +27,9 @@
 						<div class="title-post"><h1><?php the_title(); ?></h1></div>
 						<div class="post"><?php the_content(); ?></div>
 						<div class="tag"><?php the_tags('#','#'); ?></div>
+					</div>
 
-					<div class = "post">
+					
 						<blockquote>
 						<?php						
 							if ( comments_open() || get_comments_number() ) {
@@ -37,10 +38,14 @@
 							endwhile; 
 						?>
 						</blockquote>
-					</div>
-					</div>
 					
-					<div class = "article-inner">
+					
+
+										
+						<?php the_widget( 'WP_Widget_Categories', 'dropdown=1&count=1' ); ?> 
+					
+					
+					
 						<div class = "title-post">
 							<div class="hero-avatar">
 								<?php echo get_avatar(get_the_author_meta('user_email')); ?> 

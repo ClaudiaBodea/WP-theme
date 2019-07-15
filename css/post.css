@@ -69,7 +69,7 @@
 		display: inline-block;
 		}
 .pagenavi {
-	position: relative;
+	padding: 40px;
 	bottom:25px;
 	width: 100%;
 	margin: 0 auto;
@@ -241,24 +241,7 @@ a img.aligncenter {
 	/* Above WP toolbar. */
 }
 
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
 
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
 
 /*
   ========================================

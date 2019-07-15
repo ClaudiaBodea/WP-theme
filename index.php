@@ -79,7 +79,7 @@
 										<?php the_title( sprintf('<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>');?>
 									</div>
 									<div class="post">
-										<?php the_content(); ?>										
+										<?php the_content(); ?>															
 									</div>
 									<div class="tag">
 										 <?php the_tags( ); ?> 
@@ -111,6 +111,7 @@
 						</div>
 						<div class="post">
 							<?php the_content(); ?>
+
 						</div>
 						<div class="tag">
 							 <?php the_tags('#','#'); ?> 
@@ -127,6 +128,12 @@
 				echo _e( 'There are no articles to show', 'iap' );
 			endif;
 			?>
+
+			<div class="widget">
+				<?php the_widget( 'WP_Widget_Archives' ); ?> 
+				<?php the_widget( 'WP_Widget_Categories', 'dropdown=1&count=1' ); ?> 
+				<?php the_widget( 'WP_Widget_Recent_Comments' ); ?>
+			</div>
 
 			<!--Page Number-->
 			<div class="pagenavi">
