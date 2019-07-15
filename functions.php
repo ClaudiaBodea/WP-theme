@@ -34,6 +34,7 @@ if ( ! function_exists( 'clautheme_scripts' ) ) :
 		add_action( 'wp_enqueue_scripts', 'clautheme_scripts');
 endif;
 
+// creating footer widget area 
 function iap_widgets_init() {
 	register_sidebar(
 		array(
@@ -48,7 +49,24 @@ function iap_widgets_init() {
 		);
 
 	}
+
+// //post widget 2
+// 	register_sidebar(
+// 		array(
+// 			'name'          => __( 'Post Sidebar', 'iaptheme' ),
+// 			'id'            => 'sidebar-2',
+// 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'iaptheme' ),
+// 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+// 			'after_widget'  => '</div>',
+// 			'before_title'  => '<h3 class="widget-title">',
+// 			'after_title'   => '</h3>',
+// 			)
+// 		);
+
+// 	}
 add_action( 'widgets_init', 'iap_widgets_init' );
+
+
 add_filter( 'comment_form_fields', 'example_order_comment_form_fields' );
 
 
@@ -71,3 +89,5 @@ function bigger_embed_size()
 {
     return array('width' => 600, 'height' => 400);
 }
+
+?>

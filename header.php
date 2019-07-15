@@ -14,7 +14,7 @@
 
            <!--  Logo -->    		      
           		<div class="col-sm-6 logo">
-            		<a href="<?php get_bloginfo('url')?>"><?php echo get_bloginfo( 'name' ); ?></a>
+            		<a href="<?php get_bloginfo('http://localhost/')?>"><?php echo get_bloginfo( 'name' ); ?></a>
           		</div>
       		
             <!-- Menu -->                                   

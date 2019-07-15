@@ -79,11 +79,11 @@
 										<?php the_title( sprintf('<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>');?>
 									</div>
 									<div class="post">
-										<?php the_content(); ?>
+										<?php the_content(); ?>										
 									</div>
 									<div class="tag">
 										 <?php the_tags( ); ?> 
-									</div>
+									</div>								
 								</div>
 						</article>
 				
@@ -137,3 +137,4 @@
 </div>	<!-- container group -->		
 
 <?php get_footer(); ?>
+
