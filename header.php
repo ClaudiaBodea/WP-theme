@@ -10,11 +10,11 @@
   <body>
     <!--Header-->
     <header class="primary-header container group"> 
-        <div class ="row">
+        <div class ="row"> 
 
            <!--  Logo -->    		      
           		<div class="col-sm-6 logo">
-            		<a href="<?php get_bloginfo('url')?>"><?php echo get_bloginfo( 'name' ); ?></a>
+            		<a href="<?php echo get_bloginfo('url')?>"><?php echo get_bloginfo( 'name' ); ?></a>
           		</div>
       		
             <!-- Menu -->                                   

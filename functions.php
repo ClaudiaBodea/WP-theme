@@ -48,22 +48,21 @@ function iap_widgets_init() {
 			)
 		);
 
-	}
  
 // //post widget 2
-// 	register_sidebar(
-// 		array(
-// 			'name'          => __( 'Post Sidebar', 'iaptheme' ),
-// 			'id'            => 'sidebar-2',
-// 			'description'   => __( 'Add widgets here to appear in your sidebar.', 'iaptheme' ),
-// 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-// 			'after_widget'  => '</div>',
-// 			'before_title'  => '<h3 class="widget-title">',
-// 			'after_title'   => '</h3>',
-// 			)
-// 		);
+	register_sidebar(
+		array(
+			'name'          => __( 'Post Sidebar', 'iaptheme' ),
+			'id'            => 'sidebar-2',
+			'description'   => __( 'Add widgets here to appear in your sidebar.', 'iaptheme' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
 
-// 	}
+}
 add_action( 'widgets_init', 'iap_widgets_init' );
 
 

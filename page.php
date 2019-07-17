@@ -52,7 +52,7 @@
 								<?php echo get_the_author_meta('user_lastname'); ?>
 							</div>
 						</div>
-						<div class = "post">
+						<div class="post">
 							<blockquote>			
 								<?php echo get_the_author_meta('user_description'); ?>
 							</blockquote>

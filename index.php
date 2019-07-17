@@ -129,7 +129,7 @@
 			endif;
 			?>
 
-			<div class="widget">
+			<div class="widgets_footer">
 				<?php the_widget( 'WP_Widget_Archives' ); ?> 
 				<?php the_widget( 'WP_Widget_Categories', 'dropdown=1&count=1' ); ?> 
 				<?php the_widget( 'WP_Widget_Recent_Comments' ); ?>

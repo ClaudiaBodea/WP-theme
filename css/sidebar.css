@@ -13,3 +13,7 @@ display: block;
 .widget-title {
 	font-size: 15px;
 	}
+/*  
+.widgets_footer .widget:last-of-type {
+    border-bottom: 2px solid #5765b5;
+}*/

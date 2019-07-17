@@ -24,7 +24,7 @@
                 </div>
 
             <!-- Sidebar Widget -->
-                <div class="widget">
+                <div class="">
                     <?php get_sidebar(); ?>
                 </div>
 
@@ -40,14 +40,9 @@
             </div>
 
             <!-- Follow -->
-                <div class="follow">
-                  <!-- <?php get_sidebar(); ?> -->
-                    <a href="http://facebook.com"target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="http://twitter.com"target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="http://instagram.com"target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="http://pinterest.com"target="_blank"><i class="fab fa-pinterest"></i></a>
-                    <a href="http://linkedin.com"target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
+            <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar-2' ); ?>
+            <?php endif; ?>
       </div>
 </footer>
 <?php wp_footer(); ?>
