@@ -5,35 +5,31 @@
 */
 
 .logo a{
-	  font: 700 32px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 700 32px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border-top: 4px solid #5C6BC0;	
 	letter-spacing: .5px;
 	font-style: italic;
-	 float: left;
-	 width: 50%
+	float: left;
+	width: 50%
 	}
 
-	@media (min-width: 1230px) {
-	  .logo {
-	    padding: 40px 0 22px 220px;	
-	    width:50%;
-	  }
-	}
+	
 input {
   display: none;
 	}
-	label {
+	.primary-menu label {
 	  color: #5C6BC0;
 	  cursor: pointer;
 	  display: inline-block;
 	  font-size: 32px;
 	  padding: 5px 9px;
 	  transition: all .15s ease;
+
 	}
-	label:hover {
+	.primary-menu label:hover {
 	  color: #bdbdbd;
 	}
-	input:checked + label {
+	input:checked + .primary-menu label {
 	  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
 	  color: #9799a7;
 	}
@@ -50,32 +46,17 @@ input {
 	}
 	
 
-	@media (min-width: 1230px) {
-		 label {
-			display: none;
-		}
-		.primary-menu ul {
-			width: auto;
-		}
-		.primary-menu nav {
-		max-height: initial;
-	}
+	
 
 .primary-menu {
 	font: 700 12px/40px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-  letter-spacing: .5px;
-  text-transform: uppercase;
-   padding: 40px 220px 22px 0;
-   text-align: right;
-
+  	letter-spacing: .5px;
+  	text-transform: uppercase;
+   	padding: 40px 220px 22px 0;
+   	text-align: right;
    }
    
-	@media (min-width: 1230px) {
-	  .primary-menu {
-	    padding: 40px 220px 22px 0;
-	    width:50%;
-	  }
-	}
+	
 
 /*
   ========================================
@@ -110,4 +91,35 @@ input {
 }
  .primary-header li.current-menu-item a {
    color: #bdbdbd;
+}
+
+/*
+  ========================================
+  Responsive
+  ========================================
+*/
+
+@media (min-width: 1230px) {
+	  .logo {
+	    padding: 40px 0 22px 220px;	
+	    width:50%;
+	  }
+
+	  .primary-menu {
+	    padding: 40px 220px 22px 0;
+	    width:50%;
+	  }
+
+	  .primary-menu label {
+		display: none;
+		}
+
+	.primary-menu ul {
+		width: auto;
+		}
+
+	.primary-menu nav {
+		max-height: initial;
+	}
+
 }

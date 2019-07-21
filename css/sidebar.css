@@ -4,16 +4,16 @@ display: block;
   letter-spacing: .5px;
   color: #9DA6D9;
   border-top: 2px solid #5765b5;
-  border-bottom: 2px solid #5765b5;
+  /*border-bottom: 2px solid #5765b5;*/
   text-align: center;  
   padding: 20px 10px 20px 10px;
   width: 100%;  
-  
+  margin:0 auto;
   }
-.widget-title {
-	font-size: 15px;
-	}
-/*  
-.widgets_footer .widget:last-of-type {
-    border-bottom: 2px solid #5765b5;
-}*/
+.widget h2, h3 {
+  font-size: 13px;
+  }
+  .widget a {
+    word-wrap: break-word;
+  }
+  

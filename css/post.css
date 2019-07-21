@@ -86,12 +86,11 @@
 	   }
 	.wp-pagenavi span.current {
 		font:700 12px/12px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	   color: #fff;
+	    color: #fff;
 	  	background-color: #5C6BC0; 
 	  	padding: 4px 8px; 
 	  	border: 2px solid #5C6BC0;
 	  	margin-left: 5px;
-	  	white-space: nowrap;
 	}
 
 

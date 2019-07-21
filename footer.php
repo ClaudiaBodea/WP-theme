@@ -24,7 +24,7 @@
                 </div>
 
             <!-- Sidebar Widget -->
-                <div class="">
+                <div class="copyrights">
                     <?php get_sidebar(); ?>
                 </div>
 
@@ -39,10 +39,18 @@
 
             </div>
 
-            <!-- Follow -->
-            <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-                <?php dynamic_sidebar( 'sidebar-2' ); ?>
-            <?php endif; ?>
+            <!-- Follow Widget-->
+            <div class="col-sm-12 follow">
+                <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                <?php endif; ?>
+
+                   <!--  <a href="http://facebook.com"target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://twitter.com"target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="http://instagram.com"target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="http://pinterest.com"target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a href="http://linkedin.com"target="_blank"><i class="fab fa-linkedin"></i></a> -->
+            </div>
       </div>
 </footer>
 <?php wp_footer(); ?>
