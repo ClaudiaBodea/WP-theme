@@ -8,12 +8,12 @@
 
 <section class="hero-slider">
 <?php
-	// Query arguments : https://codex.wordpress.org/Class_Reference/WP_Query
+	
 	$args = array(
-		'posts_per_page'	=> 2,
+		'posts_per_page'	=> 4,
 		'orderby'			=> 'date',
 		'order'				=> 'DESC',
-    	// 'category_name' 	=> 'featured'
+    	// 'category_name' 	=> 'featured_post'
 	);
 	
 	// create the query
