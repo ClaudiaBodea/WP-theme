@@ -5,7 +5,9 @@
 	  // We will create a custom WordPress query and get posts based on a tag/category called featured_post.
 	
 ?>
-
+<div  id="primary" class="container group">
+	<main class="row" role="main">
+		
 <section class="hero-slider">
 <?php
 	

@@ -13,14 +13,14 @@ body {
 	text-indent:-99999px;
 	width: 40px;
 	height: 40px;
-	background: #fff;
+	background: #ece9e9;
 	border:0;
 	z-index: 1;
 	padding: 0;
 }
 .slick-next:hover,
 .slick-prev:hover {
-	background: #58b600;
+	background: #5C6BC0;
 }
 .slick-next:hover:before,
 .slick-prev:hover:before {
@@ -50,3 +50,4 @@ body {
 .slick-prev {
 	left:0;
 }
+

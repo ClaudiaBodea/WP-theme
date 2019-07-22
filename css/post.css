@@ -4,12 +4,15 @@
 	letter-spacing: .5px;	
 	padding: 15px 0 20px 0;
 	word-wrap: break-word;
-	padding:100px;
 	width:100%;
 	display: inline-block;
 	text-align: center;
 	overflow: hidden;
 }
+
+
+
+
 .content-area {
 	margin:0 15px auto;	  	
   }
